@@ -1,0 +1,20 @@
+julia 1.0
+ArgCheck
+Combinatorics
+Distributions
+Distributed
+DataFrames
+MCMCChains
+MCMCDiagnostics
+MLDataUtils
+ProgressMeter
+RCall
+Roots
+SharedArrays
+SplineHazard
+StatsBase
+DynamicHMC
+TransformVariables
+Parameters
+LogDensityProblems
+ForwardDiff
