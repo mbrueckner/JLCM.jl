@@ -22,6 +22,8 @@ using RCall
 using SharedArrays
 using DynamicHMC
 using TransformVariables
+
+using MCMCChains
 using MLDataUtils
 
 using LKJ
