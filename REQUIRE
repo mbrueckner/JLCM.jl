@@ -4,6 +4,7 @@ Combinatorics
 Distributions
 Distributed
 DataFrames
+LKJ
 MCMCChains
 MCMCDiagnostics
 MLDataUtils
