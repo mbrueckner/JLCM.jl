@@ -474,9 +474,9 @@ end
 function sampling(control::Control, data::Data, init::Vector{Tp}, prior::Tprior=Prior(data), prop::Tprior=prior) where {Tp <: AbstractParam, Tprior <: AbstractPrior}
     
     @assert length(init) == control.chains
-    
-    chains = @showprogress pmap(1:control.chains) do k
-        @info "chain $(k) of $(control.chains)"
+
+    chains = progress_pmap(1:control.chains) do k
+        @info "Chain $(k) of $(control.chains)"
         sampling(control, data, init[k]; prior=prior, prop=prop)
     end
 
@@ -508,10 +508,10 @@ function sampling(control::Control, data::Data, init::Tp=Param(data, 1);
     cp_sampler, surv_sampler, cov_sampler = init_NUTS_samplers(warmup, G, theta, data, prior; common_delta=control.common_delta)
     ac = 0.0
     
-    ## @showprogress 1 "Sampling..."
+    ##@showprogress 1 "Sampling..."
     for t in 2:M
         if G > 1
-            update_cp_params!(theta, accept[G], data, prior, cp_sampler[G])
+            update_cp_params!(theta, accept, data, prior, cp_sampler[G])
         end
 
         if control.common_beta
