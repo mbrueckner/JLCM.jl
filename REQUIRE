@@ -13,6 +13,7 @@ Roots
 SharedArrays
 SplineHazard
 StatsBase
+StatsFuns
 DynamicHMC
 TransformVariables
 Parameters
