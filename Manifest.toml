@@ -188,10 +188,10 @@ uuid = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
 version = "0.8.0"
 
 [[DynamicHMC]]
-deps = ["ArgCheck", "DocStringExtensions", "LinearAlgebra", "LogDensityProblems", "NLSolversBase", "Optim", "Parameters", "Random", "Statistics"]
-git-tree-sha1 = "82588b1eeb6d229a272b2204b718a4826194d9d4"
+deps = ["ArgCheck", "DataStructures", "DocStringExtensions", "LinearAlgebra", "LogDensityProblems", "Parameters", "Random", "Statistics", "StatsFuns", "TransformVariables"]
+git-tree-sha1 = "0354daa83afd704976de89ab03862bbeb8f7c0fe"
 uuid = "bbc10e6e-7c05-544b-b16e-64fede858acb"
-version = "2.1.0"
+version = "1.0.6"
 
 [[FFMPEG]]
 deps = ["BinaryProvider", "Libdl"]
@@ -314,9 +314,9 @@ uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
 [[LogDensityProblems]]
 deps = ["ArgCheck", "BenchmarkTools", "DiffResults", "DocStringExtensions", "Parameters", "Random", "Requires", "TransformVariables"]
-git-tree-sha1 = "10058bfce11b71237e3ea9975b4153f8207d536e"
+git-tree-sha1 = "2a97dcb4e23ce0d2ae2d671dc884fb4327a9641d"
 uuid = "6fdf6af0-433a-55f7-b3ed-c6c6e0b8df7c"
-version = "0.9.1"
+version = "0.8.3"
 
 [[Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
